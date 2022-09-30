@@ -5,6 +5,7 @@ import FormDating from "./components/FormDating/FormDating";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
 import Departments from "./components/Departments/Departments";
 import Banner from "./components/Banner/Banner";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <SectionTitle text="departamentos médicos" navigation={true} />
         <Departments />
         <Banner />
+        <SectionTitle text="lo último del blog" navigation={false} />
+        <Blog />
       </main>
     </div>
   );
