@@ -1,0 +1,74 @@
+Section Header
+  ~Navbar secundario
+    Servicio de emergencia y ambulancia las 24 horas: +321 789 65 4812
+
+  ~Contenido del Header
+    Llámanos ahora
+      +1 888-986-3456
+    
+    4800 Secc 16, Tlalpan
+      Ciudad de México, CDMX
+    
+    Lunes - Sábado
+      09:00am - 18:00pm
+
+  ~Navbar principal
+    INICIO
+    SOBRE NOSOTROS
+    DEPARTAMENTOS
+    NOTICIAS
+    CONTÁCTENOS 
+
+    FOR CONSULTATION - btn-primary
+
+Section Home
+  ~Titulo principal
+    Servicios médicos en los que puedes confiar.
+  ~Descripcion:
+    Denouncing pleasure and praising pain was born and we will give you a complete account of the system.
+  
+  READ MORE - btn-secondary
+  DEPARTMENTS - btn-primary
+
+Search
+  ~ Haga una cita
+    Nombre Completo
+    Seleccionar Departamento
+    Seleccionar Doctor
+    Seleccionar Fecha
+
+Section Departments 
+  ~ Medical Departments
+    - Ginecología
+      Who chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain.
+      READ MORE - btn
+
+    - Neurología
+      Who chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain.
+      READ MORE - btn
+    
+    - Cardiología
+      How all this mistaken al idea of denouncing pleasure praisings pain was complete.
+      READ MORE - btn
+
+    - Neumología
+      Who chooses to enjoy a pleasure that has annoying consquences, or one who avoids a pain.
+      READ MORE - btn
+
+    - Oftalmología
+    - Pediatría
+
+Section Banner
+  Conoce porque Medicom es el mejor hospital del país.
+
+  25
+    años de experiencia
+
+  284
+    caras sonrientes 
+
+  176
+    trasplantes de corazón
+
+  142
+    premios obtenidos

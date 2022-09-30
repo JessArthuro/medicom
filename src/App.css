@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-color: #0a92ca;
+  --primary-hover: #0985B8;
+  /* --gray: #e3e3e3; */
+
+  --white: #ffffff;
+  --black: #222222;
+  --gray: #86929a;
+  --border: #e6e6e6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* #e6e6e6 */
+/* #232425 */
+/* #0a92ca azul color primario */
+
+/* fcfcfc la barra superior de navegacion */
+/* ffffff para el background del header */
+/* f9f9f9 los bordes */
+
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  background-color: #fcfcfc;
+  overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style: none;
 }
+
+button {
+  background: none;
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .react-datepicker__tab-loop {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  border-color: red;
+  background-color: green;
+}
+
+.react-datepicker-wrapper {
+  background-color: red;
+} */

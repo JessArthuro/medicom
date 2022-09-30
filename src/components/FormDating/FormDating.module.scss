@@ -1,0 +1,166 @@
+// ==================  General component styles  =====================
+.form_dating {
+  display: flex;
+  justify-content: center;
+  margin: -3rem 0 3rem;
+}
+
+.form_content {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .1);
+}
+
+.form_title {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.title_icon {
+  font-size: 1.5rem;
+}
+
+.form_data {
+  background-color: var(--white);
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 40px;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  position: relative;
+  height: 189px;
+  grid-template-areas: "input1 input2 btn"
+    "input3 input4 btn";
+}
+
+.input {
+  padding: .5rem .75rem;
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  outline: none;
+  color: var(--black);
+}
+
+.input1 {
+  grid-area: input1;
+}
+
+.input2 {
+  grid-area: input2;
+  padding: .5rem;
+}
+
+.input3 {
+  grid-area: input3;
+  padding: .5rem;
+}
+
+.input_date {
+  grid-area: input4;
+  cursor: default;
+}
+
+.btn_send {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  grid-area: btn;
+  transition: .2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+}
+
+.icon_send {
+  filter: invert(1);
+}
+
+.msj_content {
+  position: absolute;
+  top: -5.5rem;
+  left: 0;
+  width: 100%;
+  background-color: #f8d7da;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+  font-size: .85rem;
+  color: #721c24;
+}
+
+.list_errors {
+  list-style-type: disc;
+  padding-left: .75rem;
+}
+
+
+// ==================  Breakpoints  =====================
+@media only screen and (max-width: 992px) {
+  .form_content {
+    width: 85%;
+    grid-template-columns: 180px 1fr;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .form_content {
+    grid-template-columns: 1fr;
+  }
+
+  .form_title {
+    padding: 1rem 0;
+  }
+
+  .form_data {
+    padding: 2rem 1.5rem;
+    height: 156px;
+  }
+
+  .msj_content {
+    top: -6.5rem;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .form_content {
+    width: 100%;
+    margin: 0 1rem;
+  }
+
+  .form_data {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "input1"
+      "input2"
+      "input3"
+      "input4"
+      "btn";
+    height: auto;
+  }
+
+  .msj_content {
+    top: -7.5rem;
+  }
+
+  .btn_send {
+    border-radius: 0;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .form_content {
+    margin: 0;
+  }
+
+  .msj_content {
+    top: -9.5rem;
+  }
+}

@@ -1,0 +1,67 @@
+// ==================  General component styles  =====================
+.title_container {
+  margin: 0 3.5rem;
+  padding: .5rem 0;
+  border-bottom: 1.5px solid var(--border);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5px;
+    left: 0;
+    height: 1.5px;
+    width: 60px;
+    background-color: var(--primary-color);
+  }
+}
+
+.title {
+  text-transform: capitalize;
+  color: var(--black);
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.btn_content {
+  display: flex;
+  column-gap: .5rem;
+}
+
+.btn_navigation {
+  border: 1.5px solid var(--border);
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_navigation {
+  font-size: 1.45rem;
+}
+
+
+// ==================  Breakpoints  =====================
+@media only screen and (max-width: 992px ) {
+  .title_container {
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .title_container {
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .btn_content {
+    display: none;
+  }
+}

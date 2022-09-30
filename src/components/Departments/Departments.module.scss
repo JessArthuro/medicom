@@ -1,0 +1,82 @@
+// ==================  General component styles  =====================
+.slider_content {
+  margin: 3rem 3.5rem 4rem;
+}
+
+.card_department {
+  background-color: var(--white);
+  border: 1.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s ease-in;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 2.85rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border);
+  }
+
+  &:hover {
+    border: 1.5px solid var(--primary-color);
+
+    .btn_department {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+  }
+}
+
+.img_department {
+  height: 5rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.title_department {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.description_department {
+  font-size: .75rem;
+  color: var(--gray);
+  text-align: center;
+  padding: .5rem .5rem 1rem;
+}
+
+.btn_department {
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: .75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding: .25rem .75rem;
+  border-radius: 20px;
+  background-color: var(--white);
+  z-index: 10;
+  border: 1px solid var(--border);
+  transition: .3s ease-in;
+}
+
+
+// ==================  Breakpoints  =====================
+@media only screen and (max-width: 992px ) {
+  .slider_content {
+    margin: 3rem 2rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .slider_content {
+    margin: 3rem 1rem 4rem;
+  }
+}
