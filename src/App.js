@@ -6,6 +6,7 @@ import SectionTitle from "./components/SectionTitle/SectionTitle";
 import Departments from "./components/Departments/Departments";
 import Banner from "./components/Banner/Banner";
 import Blog from "./components/Blog/Blog";
+import Facilities from "./components/Facilities/Facilities";
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
         <SectionTitle text="departamentos médicos" navigation={true} />
         <Departments />
         <Banner />
-        <SectionTitle text="lo último del blog" navigation={false} />
+        <SectionTitle text="lo último del blog" />
         <Blog />
+        <SectionTitle text="nuestras instalaciones ofrecen" />
+        <Facilities />
       </main>
     </div>
   );

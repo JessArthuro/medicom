@@ -1,8 +1,8 @@
 // ==================  General component styles  =====================
 .blog_container {
-  padding: 2.5rem 3.5rem 3rem;
+  padding: 2.5rem 0 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
 }
 
@@ -46,34 +46,4 @@
   column-gap: .3rem;
   align-items: center;
   text-transform: capitalize;
-}
-
-
-// ==================  Breakpoints  =====================
-@media only screen and (max-width: 992px) {
-  .blog_container {
-    padding: 2.5rem 2rem 3rem;
-  }
-
-  .article_details {
-    column-gap: 1rem;
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  .blog_container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 630px) {
-  .blog_container {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .blog_container {
-    padding: 2.5rem 1rem 3rem;
-  }
 }

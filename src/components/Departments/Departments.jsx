@@ -1,9 +1,9 @@
-import iconGinecology from "../../img/icons/ginecologia.svg";
-import iconNeurology from "../../img/icons/neurologia.svg";
-import iconCardiology from "../../img/icons/cardiologia.svg";
-import iconPulmonology from "../../img/icons/neumologia.svg";
-import iconOphthalmology from "../../img/icons/oftalmologia.svg";
-import iconPediatrics from "../../img/icons/pediatria.svg";
+import iconGinecology from "../../img/icons/departments/ginecologia.svg";
+import iconNeurology from "../../img/icons/departments/neurologia.svg";
+import iconCardiology from "../../img/icons/departments/cardiologia.svg";
+import iconPulmonology from "../../img/icons/departments/neumologia.svg";
+import iconOphthalmology from "../../img/icons/departments/oftalmologia.svg";
+import iconPediatrics from "../../img/icons/departments/pediatria.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -34,7 +34,7 @@ function Departments() {
         }
       }}
       modules={[Navigation]}
-      className={style.slider_content}
+      className={`${style.slider_content} container`}
     >
       {/* Slide #1 */}
       <SwiperSlide>

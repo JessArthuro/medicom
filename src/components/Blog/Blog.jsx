@@ -3,7 +3,7 @@ import style from "./Blog.module.scss";
 
 function Blog() {
   return (
-    <section className={style.blog_container}>
+    <section className={`${style.blog_container} container`}>
       <ArticleBlog
         imgnumber="1"
         imgalt="Doctor chocando la mano con un niño"
