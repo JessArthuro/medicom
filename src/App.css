@@ -10,21 +10,11 @@
 :root {
   --primary-color: #0a92ca;
   --primary-hover: #0985B8;
-  /* --gray: #e3e3e3; */
-
   --white: #ffffff;
   --black: #222222;
   --gray: #86929a;
   --border: #e6e6e6;
 }
-
-/* #e6e6e6 */
-/* #232425 */
-/* #0a92ca azul color primario */
-
-/* fcfcfc la barra superior de navegacion */
-/* ffffff para el background del header */
-/* f9f9f9 los bordes */
 
 html {
   scroll-behavior: smooth;
@@ -64,4 +54,13 @@ img {
   max-width: 1150px;
   width: 92%;
   margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--border) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color) !important;
 }

@@ -3,7 +3,7 @@ import style from "./SectionTitle.module.scss";
 
 function SectionTitle({ text, navigation }) {
   return (
-    <div className={`${style.title_container} container`}>
+    <div className={style.title_container}>
       <h2 className={style.title}>{text}</h2>
 
       {navigation ? (

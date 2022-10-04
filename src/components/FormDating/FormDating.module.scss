@@ -6,7 +6,8 @@
 }
 
 .form_content {
-  width: 75%;
+  max-width: 950px;
+  width: 80%;
   display: grid;
   grid-template-columns: 200px 1fr;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .1);

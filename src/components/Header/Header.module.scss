@@ -162,7 +162,7 @@
 
   .btn__close {
     display: block;
-    position: absolute;
+    position: fixed;
     top: .25rem;
     left: 52%;
     z-index: 10000;

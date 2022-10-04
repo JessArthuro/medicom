@@ -1,9 +1,13 @@
 // ==================  General component styles  =====================
-.blog_container {
-  padding: 2.5rem 0 3rem;
+.section_blog {
+  padding: 1rem 0 4rem;
+}
+
+.article_content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
+  padding-top: 2.5rem;
 }
 
 .article_blog {

@@ -7,34 +7,21 @@ import SvgParking from "../../img/icons/facilities/parking.svg";
 
 import style from "./Facilities.module.scss";
 import ItemFacilities from "./ItemFacilities";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function Facilities() {
   return (
     <section className={`${style.section_facilities} container`}>
-      <ItemFacilities 
-        svgicon={SvgAmbulance} 
-        title="ambulancia 24 horas"
-      />
-      <ItemFacilities 
-        svgicon={SvgNurse} 
-        title="enfermeras especiales" 
-      />
-      <ItemFacilities 
-        svgicon={SvgChurch}
-        title="lugares de adoración"
-      />
-      <ItemFacilities 
-        svgicon={SvgWaiting}
-        title="áreas de espera"
-      />
-      <ItemFacilities 
-        svgicon={SvgMedicine}
-        title="medicamentos recetados"
-      />
-      <ItemFacilities 
-        svgicon={SvgParking}
-        title="estacionamiento"
-      />
+      <SectionTitle text="nuestras instalaciones ofrecen" />
+
+      <div className={style.section_content}>
+        <ItemFacilities svgicon={SvgAmbulance} title="ambulancia 24 horas" />
+        <ItemFacilities svgicon={SvgNurse} title="enfermeras especiales" />
+        <ItemFacilities svgicon={SvgChurch} title="lugares de adoración" />
+        <ItemFacilities svgicon={SvgWaiting} title="áreas de espera" />
+        <ItemFacilities svgicon={SvgMedicine} title="medicamentos recetados" />
+        <ItemFacilities svgicon={SvgParking} title="estacionamiento" />
+      </div>
     </section>
   );
 }

@@ -6,7 +6,7 @@ function ArticleBlog({ imgnumber, imgalt, title, date, comments }) {
     <div className={style.article_blog}>
       <img
         className={style.article_img}
-        src={require(`../../img/blog${imgnumber}.jpg`)}
+        src={require(`../../img/blog/blog${imgnumber}.jpg`)}
         alt={imgalt}
       />
 

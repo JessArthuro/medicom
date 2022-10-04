@@ -93,8 +93,8 @@ function Header() {
           {/* Pendiente: Añadir la clase active con el hook useEffect para señalar la seccion activa en ese momento. */}
           <NavItem href="#home" title="inicio" active={true} />
           <NavItem href="#home" title="sobre nosotros" active={false} />
-          <NavItem href="#home" title="departamentos" active={false} />
-          <NavItem href="#home" title="noticias" active={false} />
+          <NavItem href="#departments" title="departamentos" active={false} />
+          <NavItem href="#blog" title="noticias" active={false} />
           <NavItem href="#home" title="contáctenos" active={false} />
         </ul>
         <button className={styles.nav__btn}>Agendar una cita</button>
