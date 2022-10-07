@@ -9,7 +9,7 @@ import ItemDoctor from "./ItemDoctor";
 
 function Doctors() {
   return (
-    <section className={`${style.section_doctors} container`}>
+    <section className={`${style.section_doctors} container`} id="doctors">
       <SectionTitle text="equipo de doctores" />
 
       <Swiper

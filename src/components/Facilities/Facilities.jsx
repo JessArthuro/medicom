@@ -11,7 +11,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 function Facilities() {
   return (
-    <section className={`${style.section_facilities} container`}>
+    <section className={`${style.section_facilities} container`} id="facilities">
       <SectionTitle text="nuestras instalaciones ofrecen" />
 
       <div className={style.section_content}>
