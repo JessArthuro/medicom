@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { GoCalendar } from "react-icons/go";
 import { GrSend } from "react-icons/gr";
 
+// Importaciones necesarias para el funcionamiento de la libreria DatePicker.
 import DatePicker, { registerLocale } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import es from "date-fns/locale/es";
@@ -15,7 +16,7 @@ import Swal from "sweetalert2";
 registerLocale("es", es);
 
 function FormDating() {
-  // La funcion isWeekday deshabilita los sabados y domingos en la libreria DatePicker.
+  // Funcion para deshabilitar los sabados y domingos en la libreria DatePicker.
   const isWeekday = (date) => {
     const day = date.getDay();
     return day !== 0 && day !== 6;
@@ -42,7 +43,7 @@ function FormDating() {
   const onSubmit = (data) => {
     // console.log(data);
 
-    // Creacion de alerta cuando la cita fue creada exitosamente.
+    // Alerta para mostrar cuando la cita fue creada exitosamente.
     Swal.fire({
       position: "top-end",
       icon: "success",
@@ -55,7 +56,7 @@ function FormDating() {
     });
   };
 
-  // El hook useEffect reiniciara los datos del formulario si la validacion fue exitosa.
+  // El hook useEffect reiniciara los datos del formulario si el envio fue exitoso y no contiene errores.
   useEffect(() => {
     if (formState.isSubmitSuccessful) {
       reset({
@@ -68,7 +69,7 @@ function FormDating() {
   }, [formState, submittedData, reset]);
 
   return (
-    <section className={style.form_dating}>
+    <section className={style.form_dating} id="form-dating">
       <div className={style.form_content}>
         <div className={style.form_title}>
           <GoCalendar className={style.title_icon} />
@@ -143,9 +144,14 @@ function FormDating() {
             <option value="" disabled>
               Seleccione al Doctor
             </option>
-            <option value="Dr. William Osler">Dr. William Osler</option>
-            <option value="Dr. Joseph Lister">Dr. Joseph Lister</option>
-            <option value="Dr. Sigmund Freud">Dr. Sigmund Freud</option>
+            <option value="Dr. Victor Cabrera">Dr. Victor Cabrera</option>
+            <option value="Dra. Ana Estrada">Dra. Ana Estrada</option>
+            <option value="Dr. Ricardo Escobar">Dr. Ricardo Escobar</option>
+            <option value="Dra. Carmen Tapia">Dra. Carmen Tapia</option>
+            <option value="Dr. Mario Vázquez">Dr. Mario Vázquez</option>
+            <option value="Dra. Isabel Beltran">Dra. Isabel Beltran</option>
+            <option value="Dr. Sergio Delgado">Dr. Sergio Delgado</option>
+            <option value="Dra. Diana Guzmán">Dra. Diana Guzmán</option>
           </select>
 
           {/* Componente contenedor para facilitar el trabajo con la libreria DatePicker. */}

@@ -44,7 +44,7 @@ function Footer() {
           </div>
 
           {/* Seccion sobre Medicom */}
-          <div>
+          <div id="about">
             <TitleFooter text="sobre medicom" />
             <ParagraphFooter text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus praesentium voluptatibus voluptas vitae quia. Enim et amet nulla officia architecto, magni necessitatibus eligendi fuga sequi esse impedit soluta tempora est." />
             <ParagraphFooter text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, accusantium eligendi nam maxime sint saepe consectetur! Animi officiis mollitia totam." />
@@ -63,7 +63,7 @@ function Footer() {
           </div>
 
           {/* Seccion detalles de contacto */}
-          <div>
+          <div id="contact">
             <TitleFooter text="detalles de contacto" />
             <div className={style.footer_links}>
               <LinkFooter

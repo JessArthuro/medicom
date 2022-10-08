@@ -1,14 +1,15 @@
 import styles from "./Hero.module.scss";
 
-function BtnHero({ title, btn_primary }) {
+function BtnHero({ href, title, btn_primary }) {
   return (
-    <button
+    <a
+      href={`#${href}`}
       className={`${styles.btn_hero} ${
         btn_primary ? `${styles.btn_departments}` : ""
       }`}
     >
       {title}
-    </button>
+    </a>
   );
 }
 

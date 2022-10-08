@@ -14,6 +14,12 @@
   border: 1.5px solid var(--border);
   background-color: var(--white);
   padding: .75rem;
+
+  &:hover {
+    .article_title {
+      color: var(--primary-color);
+    }
+  }
 }
 
 .article_img {
@@ -26,6 +32,7 @@
   color: var(--black);
   font-weight: 500;
   margin: .35rem 0;
+  transition: .3s ease-in;
 }
 
 .article_description {

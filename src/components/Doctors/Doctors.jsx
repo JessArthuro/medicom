@@ -39,7 +39,7 @@ function Doctors() {
         modules={[Autoplay, Pagination]}
         className={style.doctors_slider}
       >
-        {/* Slider #1 */}
+        {/* Doctor #1 */}
         <SwiperSlide>
           <ItemDoctor
             imgnumber="1"
@@ -48,7 +48,7 @@ function Doctors() {
           />
         </SwiperSlide>
 
-        {/* Slider #2 */}
+        {/* Doctor #2 */}
         <SwiperSlide>
           <ItemDoctor
             imgnumber="2"
@@ -57,7 +57,7 @@ function Doctors() {
           />
         </SwiperSlide>
 
-        {/* Slider #3 */}
+        {/* Doctor #3 */}
         <SwiperSlide>
           <ItemDoctor
             imgnumber="3"
@@ -66,7 +66,7 @@ function Doctors() {
           />
         </SwiperSlide>
 
-        {/* Slider #4 */}
+        {/* Doctor #4 */}
         <SwiperSlide>
           <ItemDoctor
             imgnumber="4"
@@ -75,7 +75,7 @@ function Doctors() {
           />
         </SwiperSlide>
 
-        {/* Slider #5 */}
+        {/* Doctor #5 */}
         <SwiperSlide>
           <ItemDoctor
             imgnumber="5"
@@ -84,7 +84,7 @@ function Doctors() {
           />
         </SwiperSlide>
 
-        {/* Slider #6 */}
+        {/* Doctor #6 */}
         <SwiperSlide>
           <ItemDoctor
             imgnumber="6"
@@ -93,7 +93,7 @@ function Doctors() {
           />
         </SwiperSlide>
 
-        {/* Slider #7 */}
+        {/* Doctor #7 */}
         <SwiperSlide>
           <ItemDoctor
             imgnumber="7"
@@ -102,7 +102,7 @@ function Doctors() {
           />
         </SwiperSlide>
 
-        {/* Slider #8 */}
+        {/* Doctor #8 */}
         <SwiperSlide>
           <ItemDoctor
             imgnumber="8"

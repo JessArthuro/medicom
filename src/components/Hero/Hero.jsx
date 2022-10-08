@@ -16,8 +16,8 @@ function Hero() {
           </p>
 
           <div className={styles.hero_buttons}>
-            <BtnHero title="leer más" btn_primary={false} />
-            <BtnHero title="departamentos" btn_primary={true} />
+            <BtnHero href="about" title="leer más" />
+            <BtnHero href="departments" title="departamentos" btn_primary={true} />
           </div>
         </div>
       </div>

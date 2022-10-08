@@ -15,18 +15,25 @@ import styles from "./Header.module.scss";
 function Header() {
   const [menu, setMenu] = useState(false);
 
-  // Esta funcion va alternar el valor de menu en el useState. Es decir, si el valor el true lo cambiara a false y viceversa.
+  // Funcion para alternar el valor de menu en el useState. Es decir, si el valor es true lo cambiara a false y viceversa.
   const handleMenu = () => {
     setMenu(!menu);
   };
 
+  // Funcion para remover el menu cuando se hace click en un link de la navegacion.
+  const closeMenu = () => {
+    setMenu(false);
+  };
+
   return (
     <header>
-      {/* Con ayuda del operador ternario preguntamos si el valor de menu es true, aplica el estilo open y sino, no aplica ningun estilo extra. */}
+      {/* Seccion con el numero de emergencias y links a sus redes sociales. */}
       <div
+        // Con ayuda del operador ternario preguntamos si el valor de menu es true, aplica el estilo open y sino, no aplica ningun estilo extra.
         className={`${styles.header__secondary} ${
           menu ? `${styles.open}` : ""
         }`}
+        id="header-secondary"
       >
         <p className={styles.info__emergency}>
           <BiPhoneCall className={styles.info__icon} /> Servicio de emergencia y
@@ -52,6 +59,7 @@ function Header() {
         </div>
       </div>
 
+      {/* Seccion logo principal e informacion de contacto */}
       <div className={styles.header__main}>
         <img className={styles.logo} src={logo} alt="logo" />
 
@@ -88,16 +96,27 @@ function Header() {
         </button>
       </div>
 
+      {/* Seccion menu de navegacion principal. */}
       <nav className={styles.nav__menu}>
         <ul className={`${styles.nav__list} ${menu ? `${styles.open}` : ""}`}>
-          {/* Pendiente: Añadir la clase active con el hook useEffect para señalar la seccion activa en ese momento. */}
-          <NavItem href="#home" title="inicio" active={true} />
-          <NavItem href="#home" title="sobre nosotros" active={false} />
-          <NavItem href="#departments" title="departamentos" active={false} />
-          <NavItem href="#blog" title="noticias" active={false} />
-          <NavItem href="#home" title="contáctenos" active={false} />
+          <NavItem
+            href="#home"
+            title="inicio"
+            active={true}
+            closeMenu={closeMenu}
+          />
+          <NavItem
+            href="#departments"
+            title="departamentos"
+            closeMenu={closeMenu}
+          />
+          <NavItem href="#doctors" title="doctores" closeMenu={closeMenu} />
+          <NavItem href="#blog" title="blog" closeMenu={closeMenu} />
+          <NavItem href="#contact" title="contáctenos" closeMenu={closeMenu} />
         </ul>
-        <button className={styles.nav__btn}>Agendar una cita</button>
+        <a href="#form-dating" className={styles.nav__btn}>
+          Agendar una cita
+        </a>
       </nav>
     </header>
   );

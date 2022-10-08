@@ -39,32 +39,32 @@ function Departments() {
         modules={[Navigation]}
         className={style.slider_content}
       >
-        {/* Slide #1 */}
+        {/* Department #1 */}
         <SwiperSlide>
           <CardDepartment imgref={iconGinecology} titlecard="Ginecología" />
         </SwiperSlide>
 
-        {/* Slide #2 */}
+        {/* Department #2 */}
         <SwiperSlide>
           <CardDepartment imgref={iconNeurology} titlecard="Neurología" />
         </SwiperSlide>
 
-        {/* Slider #3 */}
+        {/* Department #3 */}
         <SwiperSlide>
           <CardDepartment imgref={iconCardiology} titlecard="Cardiología" />
         </SwiperSlide>
 
-        {/* Slider #4 */}
+        {/* Department #4 */}
         <SwiperSlide>
           <CardDepartment imgref={iconPulmonology} titlecard="Neumología" />
         </SwiperSlide>
 
-        {/* Slider #5 */}
+        {/* Department #5 */}
         <SwiperSlide>
           <CardDepartment imgref={iconOphthalmology} titlecard="Oftalmología" />
         </SwiperSlide>
 
-        {/* Slider #6 */}
+        {/* Department #6 */}
         <SwiperSlide>
           <CardDepartment imgref={iconPediatrics} titlecard="Pediatría" />
         </SwiperSlide>
