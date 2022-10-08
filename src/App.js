@@ -8,6 +8,7 @@ import Doctors from "./components/Doctors/Doctors";
 import Facilities from "./components/Facilities/Facilities";
 import Blog from "./components/Blog/Blog";
 import Footer from "./components/Footer/Footer";
+import GoToTop from "./components/GoToTop/GoToTop";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Doctors />
         <Blog />
         <Facilities />
+        <GoToTop />
       </main>
       <Footer />
     </div>
